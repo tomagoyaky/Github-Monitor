@@ -7,7 +7,9 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "mock": "node ../scripts/generateMock.js"
+    "mock": "node ../scripts/generateMock.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
@@ -17,7 +19,9 @@
     "firebase-functions": "^2.0.5",
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.22.2",
-    "path-to-regexp": "^2.2.1"
+    "path-to-regexp": "^2.2.1",
+    "snyk": "^1.189.0"
   },
-  "private": true
+  "private": true,
+  "snyk": true
 }
