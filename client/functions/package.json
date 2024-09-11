@@ -17,7 +17,7 @@
     "firebase-functions": "^2.0.5",
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.22.2",
-    "path-to-regexp": "^2.2.1"
+    "path-to-regexp": "^8.0.0"
   },
   "private": true
 }
